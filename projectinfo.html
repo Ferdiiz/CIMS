@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="intro-style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="about-style.css">
+    <style>
+        /* Hide scrollbar for webkit browsers (Chrome, Safari, Edge) */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        
+        /* Hide scrollbar for Firefox */
+        html {
+            scrollbar-width: none;
+        }
+        
+        /* Hide scrollbar for IE and Edge */
+        body {
+            -ms-overflow-style: none;
+        }
+
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            max-width: 70rem;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+
+        .project-box {
+            background-color: rgba(40, 40, 40, 0.8);
+            border-radius: 15px;
+            padding: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .project-box:hover {
+            transform: translateY(-5px);
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 10px 30px;
+        }
+
+        .project-preview {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            color: white;
+        }
+
+        .project-button {
+            background-color: rgb(167, 167, 167);
+            color: black;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            border: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background-color 0.2s;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 0.8rem;
+        }
+
+        .project-button:hover {
+            background-color: rgb(231, 231, 231);
+        }
+
+        @media (max-width: 768px) {
+            .project-container {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <img class="image-gradient" src="intro-gradient.png" alt="gradient"> -->
+    <!-- <div class="layer-blur"></div> -->
+
+    <div class="container">
+        <header>
+            <!-- <a data-aos="fade-down" data-aos-duration="1500" class="logo" href="index.html">CIMS</a> -->
+            <h1 class="logo">CIMS</h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="features.html">Features</a>
+                <a href="projectinfo.html">Project Info</a>
+                <!-- <a data-aos="fade-down" data-aos-duration="3000" href="#">Docs</a> -->
+            </nav>
+
+            <a class="btn-signing" href="login.php">Login</a>
+            
+        </header>
+    
+
+        <main>
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 2rem; margin-bottom: 1rem; margin-top: 2rem;">📋 Project Information</h2>
+                <p class="description" style="text-align: center; margin: 0 auto;">Explore the comprehensive documentation and deliverables of the CIMS project</p>
+            </div>
+
+            <div class="project-container">
+                
+                <div class="project-box">
+                    <img src="img/preview-1.png" alt="FYP Report Preview" class="project-preview">
+                    <h3 class="project-title">Final Year Project Report</h3>
+                    <p style="color: #b0b0b0; margin-bottom: 0.8rem; font-size: 0.9rem;">Complete documentation and analysis of the CIMS development process</p>
+                    <a href="deliverables/report.html" class="project-button">View Report</a>
+                </div>
+
+                <div class="project-box">
+                    <img src="img/preview-2.png" alt="FYP Slides Preview" class="project-preview">
+                    <h3 class="project-title">Presentation Slides</h3>
+                    <p style="color: #b0b0b0; margin-bottom: 0.8rem; font-size: 0.9rem;">Project presentation slides showcasing key features and implementation</p>
+                    <a href="deliverables/slides.html" class="project-button">View Slides</a>
+                </div>
+
+                <div class="project-box">
+                    <img src="img/preview-3.png" alt="FYP Poster Preview" class="project-preview">
+                    <h3 class="project-title">Project Poster</h3>
+                    <p style="color: #b0b0b0; margin-bottom: 0.8rem; font-size: 0.9rem;">Visual summary poster highlighting the project's objectives and outcomes</p>
+                    <a href="deliverables/poster.html" class="project-button">View Poster</a>
+                </div>
+
+                <div class="project-box">
+                    <img src="img/preview-4.png" alt="FYP Video Preview" class="project-preview">
+                    <h3 class="project-title">Demo Video</h3>
+                    <p style="color: #b0b0b0; margin-bottom: 0.8rem; font-size: 0.9rem;">Comprehensive video demonstration of the CIMS system functionality</p>
+                    <a href="deliverables/video.html" class="project-button">Watch Video</a>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer style="text-align: center; padding: 2rem 0; margin-top: 3rem; border-top: 1px solid rgba(255, 255, 255, 0.1); color: gray;">
+            <p>&copy; 2024 CIMS - College Internship Management System. All rights reserved.</p>
+        </footer>
+
+        
+        <!-- <spline-viewer class="robot-3d" url="https://prod.spline.design/KziQo-ltSrpeonGM/scene.splinecode"></spline-viewer> -->
+        <!-- <spline-viewer class="robot-3d" url="https://prod.spline.design/ysaiPo7vdYwlub4p/scene.splinecode"></spline-viewer> -->
+
+    </div>
+    <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.37/build/spline-viewer.js"></script> -->
+    <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.32/build/spline-viewer.js"></script> -->
+     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="intro-style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="about-style.css">
+    <style>
+        /* Hide scrollbar for webkit browsers (Chrome, Safari, Edge) */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        
+        /* Hide scrollbar for Firefox */
+        html {
+            scrollbar-width: none;
+        }
+        
+        /* Hide scrollbar for IE and Edge */
+        body {
+            -ms-overflow-style: none;
+        }
+
+        .features-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            max-width: 80rem;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .feature-box {
+            background-color: rgba(40, 40, 40, 0.8);
+            border-radius: 15px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 10px 30px;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            color: #b0b0b0;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        .feature-list li:before {
+            content: "✅ ";
+            margin-right: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .features-container {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <img class="image-gradient" src="intro-gradient.png" alt="gradient"> -->
+    <!-- <div class="layer-blur"></div> -->
+
+    <div class="container">
+        <header>
+            <!-- <a data-aos="fade-down" data-aos-duration="1500" class="logo" href="index.html">CIMS</a> -->
+            <h1 class="logo">CIMS</h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="features.html">Features</a>
+                <a href="projectinfo.html">Project Info</a>
+                <!-- <a data-aos="fade-down" data-aos-duration="3000" href="#">Docs</a> -->
+            </nav>
+
+            <a class="btn-signing" href="login.php">Login</a>
+            
+        </header>
+    
+
+        <main>
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 2rem; margin-bottom: 0rem; margin-top: 3rem;">🌟 Key Features of CIMS</h2>
+            </div>
+
+            <div class="features-container">
+                
+                <div class="feature-box">
+                    <span class="feature-icon">🛠️</span>
+                    <h3 class="feature-title">Admin Panel</h3>
+                    <ul class="feature-list">
+                        <li>Add, Edit, and Remove Companies</li>
+                        <li>Manage Internship Briefings & Announcements</li>
+                        <li>View and Manage Student Applications</li>
+                        <li>Approve/Reject Student Placements</li>
+                        <li>Assign Supervisors to Students</li>
+                        <li>Track Internship Status (Ongoing/Completed)</li>
+                        <li>Access and Review Daily & Monthly Logbooks</li>
+                        <li>View Final Reports and Evaluations</li>
+                    </ul>
+                </div>
+
+                <div class="feature-box">
+                    <span class="feature-icon">🧑‍🏫</span>
+                    <h3 class="feature-title">Supervisor Panel</h3>
+                    <ul class="feature-list">
+                        <li>View Assigned Students & Their Placements</li>
+                        <li>Monitor Daily and Monthly Logbooks</li>
+                        <li>Acknowledge or Provide Feedback on Logbooks</li>
+                        <li>Upload Evaluation Reports</li>
+                        <li>Track Evaluation Completion Status</li>
+                    </ul>
+                </div>
+
+                <div class="feature-box">
+                    <span class="feature-icon">🎓</span>
+                    <h3 class="feature-title">Student Panel</h3>
+                    <ul class="feature-list">
+                        <li>View Available Internships</li>
+                        <li>Apply for Company Placement</li>
+                        <li>Submit Daily & Monthly Logbooks</li>
+                        <li>Receive Feedback from Supervisors</li>
+                        <li>Upload Final Industrial Training Report</li>
+                        <li>Track Placement and Evaluation Status</li>
+                    </ul>
+                </div>
+
+                <div class="feature-box">
+                    <span class="feature-icon">📦</span>
+                    <h3 class="feature-title">General Features</h3>
+                    <ul class="feature-list">
+                        <li>Role-Based Access Control (Admin, Supervisor, Student)</li>
+                        <li>Clean and Responsive User Interface</li>
+                        <li>Secure Login and Session Management</li>
+                        <li>File Uploads for Reports and Evaluations</li>
+                        <li>Real-time Status Updates & Filters</li>
+                        <li>Dashboard Overview with Statistics</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer style="text-align: center; padding: 2rem 0; margin-top: 3rem; border-top: 1px solid rgba(255, 255, 255, 0.1); color: gray;">
+            <p>&copy; 2024 CIMS - College Internship Management System. All rights reserved.</p>
+        </footer>
+
+        
+        <!-- <spline-viewer class="robot-3d" url="https://prod.spline.design/KziQo-ltSrpeonGM/scene.splinecode"></spline-viewer> -->
+        <!-- <spline-viewer class="robot-3d" url="https://prod.spline.design/ysaiPo7vdYwlub4p/scene.splinecode"></spline-viewer> -->
+
+    </div>
+    <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.37/build/spline-viewer.js"></script> -->
+    <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.32/build/spline-viewer.js"></script> -->
+     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
